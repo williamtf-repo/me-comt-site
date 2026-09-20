@@ -1,3 +1,12 @@
+:root {
+    --base-color: #121212;
+    --background-color: #181818;
+    --bg-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(25, 27, 29) 100%);
+    --border-color: #dddddd;
+    --text-color: #ffffff;
+}
+
+
 html {
   * {
   box-sizing: border-box;
@@ -5,12 +14,12 @@ html {
 }
 body {
 
-    background: #121212;
-    color: white;
+    background: var(--base-color);
+    color: var(--text-color);
     font-family: Helvetica, Arial, sans-serif;
 
 	a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -22,9 +31,9 @@ body {
         left: 0;  
         z-index: 1000;
         
-        border-bottom: 2px solid #dddddd;
-        background: #181818;
-        background: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(25, 27, 29) 100%);
+        border-bottom: 2px solid var(--border-color);
+        background: var(--background-color);
+        background: var(--bg-gradient);
 
       display: flex;
       align-items: center;
@@ -84,7 +93,7 @@ body {
         font-size: 48px;
         font-weight: 600;
         letter-spacing: -0.05em;
-        text-shadow: 0 0 12px white;
+        text-shadow: 0 0 12px var(--text-color);
     }
 
      .contact-text {
@@ -110,7 +119,7 @@ body {
         font-weight: 125;
         letter-spacing: 1.25em;
         right: 0;
-        text-shadow: 0 0 2px white;
+        text-shadow: 0 0 2px var(--text-color);
        /* background: linear-gradient(90deg, transparent 20%, #9296a9 60%);*/
 
         transform: scale(1.025);
@@ -152,7 +161,7 @@ body {
         font-weight: 125;
         letter-spacing: 1.25em;
         right: 0;
-        text-shadow: 0 0 2px white;
+        text-shadow: 0 0 2px var(--text-color);
        /* background: linear-gradient(90deg, transparent 20%, #9296a9 60%);*/
 
         transform: scale(1.025);
@@ -164,10 +173,10 @@ body {
 	    position: relative;
 	  scroll-snap-align: start;
         
-        border-bottom: 2px solid #dddddd;
-        background: #181818;
+        border-bottom: 2px solid var(--text-color);
+        background: var(--background-color);
         
-        background: linear-gradient(180deg, rgba(24, 24, 24), rgba(34, 38, 53));
+        background: var(--bg-gradient);
         background-repeat: no-repeat;
 
       display: flex;
@@ -176,7 +185,7 @@ body {
       /*border-radius: 0 0 12px 12px;*/
     }
      .content-text {
-        color: white;
+        color: var(--text-color);
         font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 200;
     letter-spacing: .1em;
@@ -237,8 +246,8 @@ body {
 	    position: relative;
 	  scroll-snap-align: start;
         
-        border-bottom: 2px solid #dddddd;
-        background: #181818;
+        border-bottom: 2px solid var(--border-color);
+        background: var(--background-color);
         
         background: linear-gradient(180deg, rgba(24, 24, 24), rgba(34, 38, 53));
         background-repeat: no-repeat;

@@ -27,7 +27,7 @@ card?.addEventListener('mouseenter', () => {
   gsap.to(image, {
     duration: 1,
     ease: 'power2.out',
-    boxShadow: '0px 0px 48px rgba(255, 255, 255, 1)',
+    boxShadow: '0px 0px 12px rgba(255, 255, 255, 1)',
     overwrite: 'auto',
   });
 });
