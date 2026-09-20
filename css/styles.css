@@ -2,7 +2,7 @@
     --base-color: #121212;
     --background-color: #181818;
     --top-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(25, 27, 29) 100%);
-    --bg-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(25, 27, 29) 100%);
+    --bg-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(34, 38, 53) 100%);
     --border-color: #dddddd;
     --text-color: #ffffff;
 }
