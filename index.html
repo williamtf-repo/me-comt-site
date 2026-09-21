@@ -50,6 +50,11 @@
  
    
    <script src="script.js"></script> 
-   <script>window.scrollTo(0, 0);</script>
+   <script>window.scrollTo(0, 0);
+
+      if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+    }
+   </script>
   </body>
 </html>
