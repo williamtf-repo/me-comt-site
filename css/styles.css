@@ -111,7 +111,7 @@ body {
         text-shadow: 0 0 12px var(--text-color);
     }
 
-     .contact-text {
+     .top-highlightable {
         text-decoration: none;
         color: var(--text-color);
         cursor: pointer; 
@@ -125,11 +125,7 @@ body {
         transition: transform 0.4s cubic-bezier(0.25, 1.35, 1, 1), text-shadow 0.2s, letter-spacing .15s, opacity .5s;
     }
 
-    .contact-text.loaded {
-         opacity: 1;
-    }
-
-    .contact-text:hover {
+    .top-highlightable:hover {
         /* text-decoration: underline;*/
         cursor: pointer; 
         font-weight: 125;
@@ -141,7 +137,19 @@ body {
         transform: scale(1.025);
     }
     
-     .that {
+    #contact.loaded {
+         opacity: 1;
+    }
+
+    #faq.loaded {
+         opacity: 1;
+    }
+
+    #work.loaded {
+         opacity: 1;
+    }
+
+    .that {
         opacity: 0;
 
         transition: opacity .5s ease-in;
@@ -151,38 +159,7 @@ body {
          opacity: 1;
     }
 
-   .works-text {
-        text-decoration: none;
-        cursor: pointer; 
-        overflow: hidden;
-        white-space: nowrap;
-        color: var(--text-color);
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        font-weight: 25;
-	    margin-left: 5px;
-        letter-spacing: .5em;
-        opacity: 0;
-        
-        transition: transform 0.4s cubic-bezier(0.25, 1.35, 1, 1), text-shadow 0.2s, letter-spacing .15s, opacity .5s;
-    }
 
-    .works-text.loaded {
-         opacity: 1;
-    }
-
-    .works-text:hover {
-        /* text-decoration: underline;*/
-        display: inline-block;
-        cursor: pointer; 
-        font-weight: 125;
-        letter-spacing: 1.25em;
-        right: 0;
-        text-shadow: 0 0 2px var(--text-color);
-       /* background: linear-gradient(90deg, transparent 20%, #9296a9 60%);*/
-
-        transform: scale(1.025);
-    }
      .landing-section {
         height: 91.5vh;
 	    min-height: 90vh;

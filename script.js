@@ -12,6 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
  setTimeout(() => {  
   document.getElementById("contact")?.classList.add("loaded");
 }, 200);
+setTimeout(() => {  
+  document.getElementById("faq")?.classList.add("loaded");
+}, 300);
 setTimeout(() => {
   document.getElementById("landing-text")?.classList.add("loaded");
 }, 250);
