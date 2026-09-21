@@ -83,7 +83,7 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.1 // out of 1 so  0.25 is 25%
 });
 
-observer.observe(target2);
+observer.observe(target);
 
 const target2 = document.querySelector('#section-two');
 
@@ -99,7 +99,7 @@ const observer2 = new IntersectionObserver((entries) => {
   threshold: 0.05 // out of 1 so  0.25 is 25%
 });
 
-observer.observe(target2);
+observer.observe(target);
 
 
 });
