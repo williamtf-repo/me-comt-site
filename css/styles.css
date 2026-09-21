@@ -5,6 +5,8 @@
     --bg-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(34, 38, 53) 100%);
     --border-color: #dddddd;
     --text-color: #ffffff;
+
+    --text-hover: 0 0 6px var(--text-color);
 }
 
 
@@ -131,7 +133,7 @@ body {
         font-weight: 125;
         letter-spacing: 1.25em;
         right: 0;
-        text-shadow: 0 0 2px var(--text-color);
+        text-shadow: var(--text-hover);
        /* background: linear-gradient(90deg, transparent 20%, #9296a9 60%);*/
 
         transform: scale(1.025);
