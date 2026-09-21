@@ -37,7 +37,7 @@ body {
 
         transition: background-color 0.3s, color 0.3s, transform 0.2s;
     }
-    
+
     .top-row {
         position: sticky;
         top: 0;   
@@ -277,8 +277,9 @@ body {
     .heading-ooo {
         
         letter-spacing: -.25em;
-        font-size: 6vh;
+        font-size: 16vh;
         margin-top: 2vh;
+        text-align: left;
 
         transition: letter-spacing 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -296,6 +297,15 @@ body {
         font-size: 6vh;
         margin-top: 2vh;
     }
+
+    .two-visible {
+    --base-color: #0e1aff;
+    --background-color: #212cff;
+    --top-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(57, 60, 255) 100%);
+    --bg-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(77, 79, 255) 100%);
+    --border-color: #dddddd;
+    --text-color: #ffffff;
+}
 
     /*add SMOOTH SCROLLING*/
 }

@@ -82,4 +82,21 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(target);
 
+const target = document.querySelector('#section-two');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('two-visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}, {
+  threshold: 0.05 // out of 1 so  0.25 is 25%
+});
+
+observer.observe(target);
+
+
 });
