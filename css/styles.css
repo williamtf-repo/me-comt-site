@@ -111,7 +111,7 @@ body {
         text-shadow: 0 0 12px var(--text-color);
     }
 
-     .top-highlightable {
+     .top-highlight {
         text-decoration: none;
         color: var(--text-color);
         cursor: pointer; 
@@ -125,7 +125,7 @@ body {
         transition: transform 0.4s cubic-bezier(0.25, 1.35, 1, 1), text-shadow 0.2s, letter-spacing .15s, opacity .5s;
     }
 
-    .top-highlightable:hover {
+    .top-highlight:hover {
         /* text-decoration: underline;*/
         cursor: pointer; 
         font-weight: 125;
