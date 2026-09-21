@@ -89,7 +89,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('two-visible');
     } else {
-      entry.target.classList.remove('visible');
+      entry.target.classList.remove('two-visible');
     }
   });
 }, {
