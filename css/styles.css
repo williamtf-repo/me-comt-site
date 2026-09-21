@@ -113,6 +113,7 @@ body {
 
      .contact-text {
         text-decoration: none;
+        color: var(--text-color);
         cursor: pointer; 
         font-family: Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -155,6 +156,7 @@ body {
         cursor: pointer; 
         overflow: hidden;
         white-space: nowrap;
+        color: var(--text-color);
         font-family: Helvetica, Arial, sans-serif;
         font-size: 14px;
         font-weight: 25;
