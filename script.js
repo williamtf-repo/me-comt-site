@@ -7,10 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById("land")?.classList.add("loaded");
 }, 10);
  setTimeout(() => {  
-  document.getElementById("contact")?.classList.add("loaded");
+  document.getElementById("work")?.classList.add("loaded");
 }, 100);
  setTimeout(() => {  
-  document.getElementById("work")?.classList.add("loaded");
+  document.getElementById("contact")?.classList.add("loaded");
 }, 200);
 setTimeout(() => {
   document.getElementById("landing-text")?.classList.add("loaded");
