@@ -276,7 +276,7 @@ body {
         font-size: 16vh;
         margin-top: 2vh;
     }
-
+    
     .section-two.visible {
     --base-color: #0e1aff;
     --background-color: #212cff;
@@ -284,6 +284,8 @@ body {
     --bg-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(77, 79, 255) 100%);
     --border-color: #dddddd;
     --text-color: #ffffff;
+
+    background-color: var(--background-color);
 }
 
     /*add SMOOTH SCROLLING*/
