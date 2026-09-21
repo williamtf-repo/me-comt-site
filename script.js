@@ -77,7 +77,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.05 // out of 1 so  0.25 is 25%
+  threshold: 0.1 // out of 1 so  0.25 is 25%
 });
 
 observer.observe(target);

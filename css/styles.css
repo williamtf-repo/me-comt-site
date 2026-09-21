@@ -288,8 +288,6 @@ body {
     }
 
     .heading-ooo::first-letter {
-        font-size: 1.2em;
-        margin-top: -0.15em;
         transform: skewY(25deg);
         float: left;
     }
@@ -298,11 +296,11 @@ body {
         
         opacity: 1;
         letter-spacing: -0.05em;
-        font-size: 6vh;
+        font-size: 16vh;
         margin-top: 2vh;
     }
 
-    .two-visible {
+    .section-two.visible {
     --base-color: #0e1aff;
     --background-color: #212cff;
     --top-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(57, 60, 255) 100%);
