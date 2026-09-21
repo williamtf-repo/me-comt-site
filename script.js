@@ -73,7 +73,7 @@ const target = document.querySelector('#openup');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       entry.target.classList.add('visible');
     } else {
       entry.target.classList.remove('visible');
@@ -83,9 +83,10 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.05 // out of 1 so  0.25 is 25%
 });
 
- /* observer.observe(target);
+observer.observe(target);
 
-const target2 = document.querySelector('#section-two');
+/*
+ const target2 = document.querySelector('#section-two');
 
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
