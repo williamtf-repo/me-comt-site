@@ -273,9 +273,9 @@ body {
     }
     .heading-ooo {
         
-        letter-spacing: -.25em;
+        letter-spacing: -.08em;
         font-size: 20vh;
-        margin-top: 2vh;
+        margin-top: 6vh;
         text-align: left;
         opacity: 0;
         line-height: 0.9em;
@@ -293,7 +293,6 @@ body {
         
         opacity: 1;
         letter-spacing: -0.05em;
-        margin-top: 2vh;
     }
 
     .p-s2 {
