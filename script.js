@@ -68,6 +68,7 @@ card?.addEventListener('mouseleave', () => {
     ease: 'power2.out',
     boxShadow: '0px 0px 6px rgba(255, 255, 255, 0)',
   });
+});
 
 const target = document.querySelector('#openup');
 
@@ -83,24 +84,20 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.05 // out of 1 so  0.25 is 25%
 });
 
-observer.observe(target);
+if (target) observer.observe(target);
 
-
- const target2 = document.querySelector('#section-two');
+const target2 = document.querySelector('#section-two');
 
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target2.classList.add('visible');
+      entry.target.classList.add('visible');
     } else {
-      entry.target2.classList.remove('visible');
+      entry.target.classList.remove('visible');
     }
   });
 }, {
   threshold: 0.05 // out of 1 so  0.25 is 25%
 });
 
-observer.observe(target); 
-
-
-});
+if (target2) observer2.observe(target2);
