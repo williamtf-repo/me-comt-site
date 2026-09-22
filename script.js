@@ -1,4 +1,5 @@
 // Say hi to my Bad skills learned on the fly
+const root = document.documentElement;
 
 //loading and that stuff, refer to css
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,13 +21,11 @@ setTimeout(() => {
 }, 250);
 });
 
-
 const card = document.getElementById('MeImg');
 
 card?.addEventListener('mouseenter', () => {
 
   const image = card.querySelector('img');
-
   gsap.to(image, {
     duration: 1,
     ease: 'power2.out',
@@ -47,7 +46,6 @@ card?.addEventListener('mousemove', (e) => {
   const rotateYValue = x / 25;
   const shadowX = -rotateYValue * .5;
   const shadowY = rotateXValue * .5;
-
 
   image.style.transform = `rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg) scale(1.01)`;
   gsap.to(image, {
@@ -87,7 +85,6 @@ const observer = new IntersectionObserver((entries) => {
 if (target) observer.observe(target);
 
 const target2 = document.querySelector('#section-two');
-const root = document.documentElement;
 
 const regularRootVariables = {
   '--base-color': '#294051',
