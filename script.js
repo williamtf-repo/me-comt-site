@@ -105,8 +105,11 @@ const sectionTwoVariables = {
 };
 
 const setRootVariables = (variables) => {
-  Object.entries(variables).forEach(([name, value]) => {
-    root.style.setProperty(name, value);
+  gsap.to(root, {
+    ...variables,
+    duration: 1,
+    ease: 'power2.out',
+    overwrite: 'auto'
   });
 };
 
@@ -115,6 +118,7 @@ const observer2 = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       setRootVariables(sectionTwoVariables);
+      
     } else {
       entry.target.classList.remove('visible');
       setRootVariables(regularRootVariables);
