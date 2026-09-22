@@ -100,14 +100,14 @@ const sectionTwoVariables = {
   '--background-color': 'rgb(252, 134, 91)',
   '--top-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%)',
   '--bg-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%)',
-  '--border-color': '#ffb89e',
+  '--border-color': '#3c627d',
   '--text-color': '#294051'
 };
 
 const setRootVariables = (variables) => {
   gsap.to(root, {
     ...variables,
-    duration: 1,
+    duration: .5,
     ease: 'power2.out',
     overwrite: 'auto'
   });
