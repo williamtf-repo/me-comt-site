@@ -1,10 +1,10 @@
 :root {
-    --base-color: #121212;
-    --background-color: #181818;
-    --top-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(25, 27, 29) 100%);
-    --bg-gradient: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgb(34, 38, 53) 100%);
-    --border-color: #dddddd;
-    --text-color: #ffffff;
+    --base-color: #294051;
+    --background-color: #3c627d;
+    --top-gradient: linear-gradient(180deg, rgb(60, 98, 125), rgb(60, 98, 125) 100%);
+    --bg-gradient: linear-gradient(180deg, rgb(60, 98, 125), rgb(82, 119, 146) 100%);
+    --border-color: #FFB89E;
+    --text-color: #FFB89E;
 
     --text-hover: 0 0 6px var(--text-color);
 }
@@ -58,6 +58,8 @@ body {
       
       padding: 0 24px;
       border-radius: 0 0 12px 12px;
+
+      transition: background .2s ease-in-out, transform .7s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     .left {
@@ -281,14 +283,16 @@ body {
     }
     
     .section-two.visible {
-    --base-color: #0e1aff;
-    --background-color: #212cff;
-    --top-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(57, 60, 255) 100%);
-    --bg-gradient: linear-gradient(180deg, rgb(31, 34, 255) 0%, rgb(77, 79, 255) 100%);
-    --border-color: #dddddd;
-    --text-color: #ffffff;
+     --base-color: #294051;
+    --background-color: rgb(252, 134, 91);
+    --top-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%);
+    --bg-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%);
+    --border-color: #ffb89e;
+    --text-color: #294051;
 
-    background-color: var(--background-color);
+    background: var(--background-color);
+    background: var(--bg-gradient);
+    
 }
 
     /*add SMOOTH SCROLLING*/
