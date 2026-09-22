@@ -87,13 +87,40 @@ const observer = new IntersectionObserver((entries) => {
 if (target) observer.observe(target);
 
 const target2 = document.querySelector('#section-two');
+const root = document.documentElement;
+
+const regularRootVariables = {
+  '--base-color': '#294051',
+  '--background-color': '#3c627d',
+  '--top-gradient': 'linear-gradient(180deg, rgb(60, 98, 125), rgb(60, 98, 125) 100%)',
+  '--bg-gradient': 'linear-gradient(180deg, rgb(60, 98, 125), rgb(82, 119, 146) 100%)',
+  '--border-color': '#FFB89E',
+  '--text-color': '#FFB89E'
+};
+
+const sectionTwoVariables = {
+  '--base-color': '#294051',
+  '--background-color': 'rgb(252, 134, 91)',
+  '--top-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%)',
+  '--bg-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%)',
+  '--border-color': '#ffb89e',
+  '--text-color': '#294051'
+};
+
+const setRootVariables = (variables) => {
+  Object.entries(variables).forEach(([name, value]) => {
+    root.style.setProperty(name, value);
+  });
+};
 
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      setRootVariables(sectionTwoVariables);
     } else {
       entry.target.classList.remove('visible');
+      setRootVariables(regularRootVariables);
     }
   });
 }, {
