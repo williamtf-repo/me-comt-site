@@ -264,8 +264,13 @@ body {
     background: var(--background-color);
     background: var(--bg-gradient);
     
-}
+    }
 
+    .h1-s2 {
+        width: 100%;
+        height: 15%;
+        line-height: 0.5em;
+    }
     .heading-ooo {
         
         letter-spacing: -.25em;
@@ -289,6 +294,13 @@ body {
         opacity: 1;
         letter-spacing: -0.05em;
         margin-top: 2vh;
+    }
+
+    .p-s2 {
+        width: 100%;
+        height: 20%;
+        line-height: 0.5em;
+        color: var(--text-color);
     }
 
 }

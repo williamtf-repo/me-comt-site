@@ -68,7 +68,7 @@ card?.addEventListener('mouseleave', () => {
   });
 });
 
-const target = document.querySelector('#openup');
+const target = document.querySelector('.openup');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -79,7 +79,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.05 // out of 1 so  0.25 is 25%
+  threshold: 0.1 // out of 1 so  0.25 is 25%
 });
 
 if (target) observer.observe(target);
@@ -125,7 +125,7 @@ const observer2 = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.25 // out of 1 so  0.25 is 25%
+  threshold: 0.35 // out of 1 so  0.25 is 25%
 });
 
 if (target2) observer2.observe(target2);
