@@ -68,7 +68,7 @@ card?.addEventListener('mouseleave', () => {
   });
 });
 
-const target = document.querySelector('.openup');
+const target = document.querySelector('#openup');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
