@@ -242,13 +242,13 @@ body {
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
-	  scroll-snap-align: start;
+	    scroll-snap-align: start;
         
         border-bottom: 2px solid var(--border-color);
-        background: var(--background-color);
-        
-        background: linear-gradient(180deg, rgba(24, 24, 24), rgba(34, 38, 53));
+        background: var(--background-color);  
+        background: var(--bg-gradient);
         background-repeat: no-repeat;
+        color: var(--text-color);
 
         display: flex;
         align-items: stretch;
@@ -256,6 +256,19 @@ body {
         /*border-radius: 0 0 12px 12px;*/
 
     }
+
+    .section-two.visible {
+     --base-color: #294051;
+    --background-color: rgb(252, 134, 91);
+    --top-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%);
+    --bg-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%);
+    --border-color: #ffb89e;
+    --text-color: #294051;
+
+    background: var(--background-color);
+    background: var(--bg-gradient);
+    
+}
 
     .heading-ooo {
         
@@ -281,20 +294,6 @@ body {
         font-size: 16vh;
         margin-top: 2vh;
     }
-    
-    .section-two.visible {
-     --base-color: #294051;
-    --background-color: rgb(252, 134, 91);
-    --top-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%);
-    --bg-gradient: linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%);
-    --border-color: #ffb89e;
-    --text-color: #294051;
 
-    background: var(--background-color);
-    background: var(--bg-gradient);
-    
-}
-
-    /*add SMOOTH SCROLLING*/
 }
 }
