@@ -20,6 +20,7 @@ body {
     background: var(--base-color);
     color: var(--text-color);
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
 
 	a {
     color: var(--text-color);
@@ -164,17 +165,17 @@ body {
     }
 
 
-     .landing-section {
+    .landing-section {
         height: 91.5vh;
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
 	  scroll-snap-align: start;
         
-        border-bottom: 2px solid var(--text-color);
-        background: var(--background-color);
+        border-bottom: 2px solid #3c627d;
+        background: #3c627d;
         
-        background: var(--bg-gradient);
+        background: linear-gradient(180deg, rgb(60, 98, 125), rgb(82, 119, 146) 100%);
         background-repeat: no-repeat;
 
       display: flex;
@@ -246,10 +247,10 @@ body {
 	    scroll-snap-align: start;
         
         border-bottom: 2px solid var(--border-color);
-        background: var(--background-color);  
-        background: var(--bg-gradient);
+        background: #fc865b;  
+        background: linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%);
         background-repeat: no-repeat;
-        color: var(--text-color);
+        color: #294051;
 
         display: flex;
         flex-wrap: wrap;
@@ -261,13 +262,6 @@ body {
 
         transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1), color .5s;
 
-    }
-
-    .section-two.visible {
-
-    background: var(--background-color);
-    background: var(--bg-gradient);
-    
     }
 
     .h1-s2 {
@@ -306,7 +300,6 @@ body {
         color: var(--text-color);
         gap: 1em;
         font-size: 20px;
-        letter-spacing: -0.015em;
         
         position: relative;
         top: 2vh;

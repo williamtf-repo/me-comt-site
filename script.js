@@ -97,7 +97,7 @@ const regularRootVariables = {
 
 const sectionTwoVariables = {
   '--base-color': '#294051',
-  '--background-color': 'rgb(252, 134, 91)',
+  '--background-color': '#fc865b',
   '--top-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(252, 134, 91) 100%)',
   '--bg-gradient': 'linear-gradient(180deg, rgb(252, 134, 91), rgb(255, 184, 158) 100%)',
   '--border-color': '#3c627d',
