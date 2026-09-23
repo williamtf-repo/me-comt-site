@@ -43,7 +43,7 @@ body {
     .top-row {
         position: sticky;
         top: 0;   
-        height: 7vh;
+        height: max(60px, 3vh);
         width: 100%;
         left: 0;  
         z-index: 1000;
@@ -180,6 +180,7 @@ body {
       display: flex;
       align-items: stretch;
       padding: 0 24px;
+      justify-content: center;
       /*border-radius: 0 0 12px 12px;*/
     }
      .content-text {
@@ -254,6 +255,7 @@ body {
         flex-wrap: wrap;
         align-content: flex-start;
         align-items: stretch;
+        justify-content: space-between;
         padding: 0 24px;
 
         /*border-radius: 0 0 12px 12px;*/
@@ -278,8 +280,8 @@ body {
     .heading-ooo {
         float: left;
         letter-spacing: -.08em;
-        font-size: 20vh;
-        margin-top: 6vh;
+        font-size: max(200px, 6vw);
+        margin: 6vh 0 2vh;
         text-align: left;
         opacity: 0;
         line-height: 0.6em;
