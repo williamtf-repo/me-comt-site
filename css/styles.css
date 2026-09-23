@@ -253,9 +253,8 @@ body {
 
         display: flex;
         flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: stretch;
-        justify-content: space-between;
+        align-content: center;
+        align-items: center;
         padding: 0 24px;
 
         /*border-radius: 0 0 12px 12px;*/
@@ -273,9 +272,8 @@ body {
 
     .h1-s2 {
         width: 100%;
-        position: relative;
-        top: 3vh;
-        bottom: 3vh;
+        position: absolute;
+        align-self: flex-start;
     }
     .heading-ooo {
         float: left;
@@ -307,12 +305,15 @@ body {
         line-height: 0.5em;
         color: var(--text-color);
         gap: 1em;
+        font-size: 20px;
+        letter-spacing: -0.015em;
         
         position: relative;
         top: 2vh;
         bottom: 6vh;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
 }
