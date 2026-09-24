@@ -75,15 +75,19 @@ body {
         background-color: var(--border-color);
     }
 
-    .social-logo {
-        color: var(--text-color);
+    .social-icon {
         width: 67%;
-        height: auto;
-        transition: color 0.5s;
+        height: 67%;
+        background-color: var(--text-color);
+        -webkit-mask: center / contain no-repeat;
+        mask: center / contain no-repeat;
+        -webkit-mask-image: url("../images/icons/Instagram_Glyph_White.svg");
+        mask-image: url("../images/icons/Instagram_Glyph_White.svg");
+        transition: background-color 0.5s;
     }
 
-    .social-button:hover .social-logo {
-        color: var(--background-color);
+    .social-button:hover .social-icon {
+        background-color: var(--background-color);
     }
 
 }
