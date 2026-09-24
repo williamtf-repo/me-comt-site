@@ -6,7 +6,7 @@ body {
     justify-content: space-evenly;
 
     .content-section {
-        height: 90vh;
+        height: 94vh;
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
@@ -46,7 +46,29 @@ body {
         letter-spacing: .1em;
         line-height: 0.9em;
         text-align: center;
+        margin: 0.2vh;
     }
     
+    .link-row {
+        display: flex;
+        padding: 0 24px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .social-button {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 2px solid var(--border-color);
+
+        transition: transform 0.1s;
+    }
+
+    .social-button:hover {
+        transform: scale(1.2);
+    }
 
 }
