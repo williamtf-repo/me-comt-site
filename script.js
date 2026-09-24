@@ -70,6 +70,13 @@ card?.addEventListener('mouseleave', () => {
 
 const target = document.querySelector('#openup');
 
+const target2 = document.querySelector('#section-two');
+
+const target3 = document.querySelector('#MeImg');
+
+const target4 = document.querySelector('#s2-img');
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -83,8 +90,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 if (target) observer.observe(target);
-
-const target2 = document.querySelector('#section-two');
 
 const regularRootVariables = {
   '--base-color': '#294051',
@@ -125,7 +130,11 @@ const observer2 = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.25 // out of 1 so  0.25 is 25%
+  threshold: 0.75 // out of 1 so  0.25 is 25%
 });
 
 if (target2) observer2.observe(target2);
+
+if (target3) observer2.observe(target3);
+
+if (target4) observer2.observe(target4);
