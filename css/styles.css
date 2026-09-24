@@ -241,7 +241,6 @@ body {
     }
 
     .h1-s2 {
-        width: 100%;
         position: absolute;
         align-self: flex-start;
     }
@@ -283,6 +282,15 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+       .s2-img-asset {
+        width: 500px;
+        height: 600px;
+        position: absolute;
+        align-self: flex-end;
+        margin-bottom: 24px;
+        right: 24px;
     }
 
 }
