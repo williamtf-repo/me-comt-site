@@ -135,6 +135,6 @@ const observer2 = new IntersectionObserver((entries) => {
 
 if (target2) observer2.observe(target2);
 
-if (target3) observer2.observe(target3);
+if (target3) observer.observe(target3);
 
-if (target4) observer2.observe(target4);
+if (target4) observer.observe(target4);
