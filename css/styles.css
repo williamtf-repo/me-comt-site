@@ -188,14 +188,19 @@ body {
     }
 
     .parallax {
-     perspective: 1500px; /* lower is More tilt*/
+    perspective: 1500px; /* lower is More tilt*/
     width: 600px;
     height: 400px;
+        opacity: 0;
       display: flex;
     align-items: center;
      Justify-content: center;
 
      transition: transform 0.25s cubic-bezier(0.25, 1.35, 1, 1);
+    }
+
+    .parallax.visible {
+        opacity: 1;
     }
 
     
@@ -205,7 +210,6 @@ body {
     }
 
     .parallax img {
-    opacity: 0;
       width: 90%;
       height: 90%;
        object-fit: cover;
@@ -215,10 +219,6 @@ body {
        transform-style: preserve-3d;
     }
 
-    
-    .parallax img.visible {
-        opacity: 1;
-    }
 
     .content-section {
         height: 93vh;

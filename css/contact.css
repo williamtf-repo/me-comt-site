@@ -83,6 +83,7 @@ body {
         mask: center / contain no-repeat;
         -webkit-mask-image: url("../images/icons/Instagram_Glyph_White.svg");
         mask-image: url("../images/icons/Instagram_Glyph_White.svg");
+        fill: var(--text-color);
         transition: background-color 0.5s;
     }
 
