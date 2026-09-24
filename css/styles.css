@@ -284,7 +284,7 @@ body {
         flex-direction: column;
     }
 
-    .s2-img {
+    .s2-img-container {
         width: 500px;
         height: 600px;
 
@@ -293,6 +293,14 @@ body {
 
         margin-bottom: 24px;
         right: 24px;
+    }
+
+    
+    .s2-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
     }
 
 }
