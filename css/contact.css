@@ -82,6 +82,13 @@ body {
         width: 50%;
         height: 50%;
         background-color: var(--text-color);
+        fill: var(--text-color);
+        transition: background-color 0.2s;
+    }
+
+    
+    .social-icon.ig {
+        background-color: var(--text-color);
         -webkit-mask: center / contain no-repeat;
         mask: center / contain no-repeat;
         -webkit-mask-image: url("../images/icons/Instagram_Glyph_White.svg");
@@ -90,7 +97,21 @@ body {
         transition: background-color 0.2s;
     }
 
-    .social-button:hover .social-icon {
+    .social-icon.x {
+        background-color: var(--text-color);
+        -webkit-mask: center / contain no-repeat;
+        mask: center / contain no-repeat;
+        -webkit-mask-image: url("../images/icons/X_logo_2023.svg");
+        mask-image: url("../images/icons/X_logo_2023.svg");
+        fill: var(--text-color);
+        transition: background-color 0.2s;
+    }
+
+    .social-button:hover .social-icon.ig {
+        background-color: var(--background-color);
+    }
+
+     .social-button:hover .social-icon.x {
         background-color: var(--background-color);
     }
 

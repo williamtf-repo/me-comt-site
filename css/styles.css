@@ -191,12 +191,12 @@ body {
     perspective: 1500px; /* lower is More tilt*/
     width: 600px;
     height: 400px;
-        opacity: 0;
-      display: flex;
+    opacity: 0;
+    display: flex;
     align-items: center;
-     Justify-content: center;
+    justify-content: center;
 
-     transition: transform 0.25s cubic-bezier(0.25, 1.35, 1, 1);
+     transition: transform 0.25s cubic-bezier(0.25, 1.35, 1, 1), opacity .5s;
     }
 
     .parallax.visible {
