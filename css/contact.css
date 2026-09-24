@@ -75,6 +75,13 @@ body {
         background-color: var(--border-color);
     }
 
+    .social-logo {
+        color: var(--text-color);
+        width: 67%;
+        height: auto;
+        transition: color 0.5s;
+    }
+
     .social-button:hover .social-logo {
         color: var(--background-color);
     }
