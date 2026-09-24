@@ -141,7 +141,7 @@ body {
          opacity: 1;
     }
 
-     .landing-section {
+    .landing-section {
         height: 91.5vh;
 	    min-height: 90vh;
         width: 100%;
@@ -284,11 +284,13 @@ body {
         flex-direction: column;
     }
 
-       .s2-img-asset {
+    .s2-img {
         width: 500px;
         height: 600px;
+
         position: absolute;
         align-self: flex-end;
+
         margin-bottom: 24px;
         right: 24px;
     }
