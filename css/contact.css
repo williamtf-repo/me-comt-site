@@ -64,10 +64,13 @@ body {
     .social-button {
         width: 64px;
         height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 50%;
         border: 2px solid var(--border-color);
 
-        transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.5s;
+        transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
 
     .social-button:hover {
@@ -76,15 +79,15 @@ body {
     }
 
     .social-icon {
-        width: 67%;
-        height: 67%;
+        width: 50%;
+        height: 50%;
         background-color: var(--text-color);
         -webkit-mask: center / contain no-repeat;
         mask: center / contain no-repeat;
         -webkit-mask-image: url("../images/icons/Instagram_Glyph_White.svg");
         mask-image: url("../images/icons/Instagram_Glyph_White.svg");
         fill: var(--text-color);
-        transition: background-color 0.5s;
+        transition: background-color 0.2s;
     }
 
     .social-button:hover .social-icon {
