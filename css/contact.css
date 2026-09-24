@@ -6,7 +6,7 @@ body {
     justify-content: space-evenly;
 
     .content-section {
-        height: 94vh;
+        height: 93vh;
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
@@ -66,9 +66,8 @@ body {
         height: 64px;
         border-radius: 50%;
         border: 2px solid var(--border-color);
-        background-color: var(--border-color);
 
-        transition: transform 0.1s, background 0.5s;
+        transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.5s;
     }
 
     .social-button:hover {
@@ -77,7 +76,7 @@ body {
     }
 
     .social-button:hover .social-logo {
-        color: var(--background-color)
+        color: var(--background-color);
     }
 
 }

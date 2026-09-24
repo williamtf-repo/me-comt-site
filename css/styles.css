@@ -142,7 +142,7 @@ body {
     }
 
     .landing-section {
-        height: 91.5vh;
+        height: 93vh;
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
@@ -205,7 +205,7 @@ body {
     }
 
     .parallax img {
-
+    opacity: 0;
       width: 90%;
       height: 90%;
        object-fit: cover;
@@ -221,7 +221,7 @@ body {
     }
 
     .content-section {
-        height: 90vh;
+        height: 93vh;
 	    min-height: 90vh;
         width: 100%;
 	    position: relative;
