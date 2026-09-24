@@ -47,6 +47,7 @@ body {
         line-height: 0.9em;
         text-align: center;
         margin: 0.2vh;
+        width:100%;
     }
     
     .link-row {
