@@ -5,7 +5,8 @@ const root = document.documentElement;
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {  
   document.getElementById("header")?.classList.add("loaded");
-  document.getElementById("land")?.classList.add("loaded");
+  document.getElementById("land")?.classList.add("loaded")
+  document.getElementById("workheader")?.classList.add("loaded");
 }, 10);
  setTimeout(() => {  
   document.getElementById("work")?.classList.add("loaded");

@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="../css/styles.css">
-   <link rel="stylesheet" href="../css/faq.css">
-    <title>williamtf. | faq. </title>
+   <link rel="stylesheet" href="../css/works.css">
+      <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+
+    <title>williamtf. | works. </title>
   </head>
 
   <body>
@@ -25,16 +28,52 @@
 
     <div class="content-section">
         <div class="text-container">
-          <p class="content-text" style="font-size: 3em; font-weight: 600; letter-spacing: -0.1em;">
-            FAQ
-          </p>
-          <p class="content-text">
+          <div class="header-line" id="workheader">
+            <div class="letter" style="display:inline">
+              <span class="content-text">
+                W
+              </span>
+            </div>
+              <div class="letter" style="display:inline">
+              <span class="content-text">
+                O
+              </span>
+            </div>
+              <div class="letter" style="display:inline">
+              <span class="content-text">
+                R
+              </span>
+            </div>
+              <div class="letter" style="display:inline">
+              <span class="content-text">
+                K
+              </span>
+            </div>
+              <div class="letter" style="display:inline">
+              <span class="content-text">
+                S
+              </span>
+            </div>
+          </div>
+          <p class="content-text" style="width:100%">
             (Except they're not actually frequent..)
           </p>
         </div>
     </div>   
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="../script.js"></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script> 
+  <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+   
+  <script src="script.js"></script> 
+  <script>window.scrollTo(0, 0);
+
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+  </script>
+
   </body>
   
 </html>

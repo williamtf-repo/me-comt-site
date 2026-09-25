@@ -38,8 +38,21 @@ body {
         overflow: hidden;
         justify-content: center;
         flex-wrap: wrap;
-        width: 60%
+        width: 100%;
     }
+
+    #workheader {
+        font-size: 30rem;
+        font-weight: 600;
+        letter-spacing: -0.1em;
+        width: 0%;
+        transition: width .75s cubic-bezier(0.25, .9, 1, 1);
+    }
+
+    #workheader.loaded {
+        width: 100%
+    }
+
 
     .content-text {
         color: var(--text-color);
@@ -49,7 +62,6 @@ body {
         line-height: 0.9em;
         text-align: center;
         margin: 0.2vh;
-        width:100%;
     }
     
     .link-row {
