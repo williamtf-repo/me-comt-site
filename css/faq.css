@@ -1,11 +1,5 @@
 body { 
 
- ::selection {
-  background-color: var(--text-color) 50%; 
-  color: var(--background-color);         
-}
-
-    
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
