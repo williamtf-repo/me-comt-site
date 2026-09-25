@@ -1,4 +1,10 @@
 body { 
+
+    ::selection {
+  background-color: var(--text-color); 
+  color: var(--background-color);         
+}
+
     
     display: flex;
     flex-wrap: wrap;

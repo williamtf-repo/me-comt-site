@@ -17,6 +17,12 @@ html {
 }
 body {
 
+    ::selection {
+  background-color: var(--text-color); 
+  color: var(--background-color);         
+}
+
+
     background: var(--base-color);
     color: var(--text-color);
     font-family: Helvetica, Arial, sans-serif;
