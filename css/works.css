@@ -6,8 +6,7 @@ body {
     justify-content: space-evenly;
 
     .content-section {
-        height: 93vh;
-	    min-height: 90vh;
+	    min-height: 93vh;
         width: 100%;
 	    position: relative;
 	    scroll-snap-align: start;
