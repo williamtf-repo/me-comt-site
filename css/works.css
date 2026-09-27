@@ -83,27 +83,38 @@ body {
         transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
 
-    .scroll-container {
-          overflow-x: auto; 
-          overflow-y: hidden;
-        overscroll-behavior-y: contain;
-          height: 670px;
-          padding: 12px 0;
+    .hz-scroll {
+        height: 100vh;
     }
+    
+    .wrapping-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+    }    
 
     .grid-container {
-          display: flex;
-          flex-direction: row;
+        display: flex;
+        flex-direction: row;
 
-          height: 500px;
-          gap: 12px;
+        height: 500px;
+        gap: 12px;
+        width: max-content;
+        will-change: transform;
+        
+        animation: tr-hz linear both;
+        animation-timeline: --section-pin;
+        animation-range: contain 0% contain 100%;
     }
 
     .grid-item {
         overscroll-behavior-y: contain;
         flex: 0 0 auto; 
         aspect-ratio: 1.2;
-        height: 100%;
+        overflow: hidden;
+        width: 500px;
+        height: 50vh;
         border-radius: 12px;
         background-color: var(--background-color);
         border: 2px solid var(--border-color);
@@ -114,4 +125,9 @@ body {
         transform: scale(1.2);
     }
 
+    @keyframes tr-hz {
+     to {
+    transform: translateX(calc(-100% + 500px)); 
+    }
+}
 }
