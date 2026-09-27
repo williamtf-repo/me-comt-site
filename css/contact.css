@@ -91,7 +91,6 @@ body {
         background-color: var(--text-color);
         -webkit-mask: center / contain no-repeat;
         mask: center / contain no-repeat;
-        -webkit-mask-image: url("../images/icons/Instagram_Glyph_White.svg");
         mask-image: url("../images/icons/Instagram_Glyph_White.svg");
         fill: var(--text-color);
         transition: background-color 0.2s;
@@ -101,7 +100,6 @@ body {
         background-color: var(--text-color);
         -webkit-mask: center / contain no-repeat;
         mask: center / contain no-repeat;
-        -webkit-mask-image: url("../images/icons/X_logo_2023.svg");
         mask-image: url("../images/icons/X_logo_2023.svg");
         fill: var(--text-color);
         transition: background-color 0.2s;

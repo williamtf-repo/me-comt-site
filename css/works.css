@@ -86,14 +86,12 @@ body {
     .scroll-container {
           overflow-x: auto; 
           overflow-y: hidden;
-
+        overscroll-behavior-y: contain;
           height: 670px;
           padding: 12px 0;
     }
 
     .grid-container {
-          overflow-x: auto; 
-          overflow-y: hidden;
           display: flex;
           flex-direction: row;
 
@@ -102,6 +100,7 @@ body {
     }
 
     .grid-item {
+        overscroll-behavior-y: contain;
         flex: 0 0 auto; 
         aspect-ratio: 1.2;
         height: 100%;
@@ -111,9 +110,8 @@ body {
         transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
 
-    .grid-item:hover {
+    .grid-item:hover .grid-item-img {
         transform: scale(1.2);
-        background-color: var(--border-color);
     }
 
 }
