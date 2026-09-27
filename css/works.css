@@ -82,19 +82,26 @@ body {
         transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
 
+    .scroll-container {
+          overflow-x: auto; 
+          overflow-y: hidden;
+
+          height: 670px;
+          padding: 12px 0;
+    }
+
     .grid-container {
           overflow-x: auto; 
+          overflow-y: hidden;
           display: flex;
           flex-direction: row;
 
-          width: 90%;
           height: 500px;
           gap: 12px;
     }
 
     .grid-item {
         flex: 0 0 auto; 
-        width: 300px;
         aspect-ratio: 1.2;
         height: 100%;
         border-radius: 12px;
@@ -102,4 +109,10 @@ body {
         border: 2px solid var(--border-color);
         transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
+
+    .grid-item:hover {
+        transform: scale(1.2);
+        background-color: var(--border-color);
+    }
+
 }

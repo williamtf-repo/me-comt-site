@@ -139,3 +139,17 @@ if (target2) observer2.observe(target2);
 if (target3) observer.observe(target3);
 
 if (target4) observer.observe(target4);
+
+const container = document.querySelector('.scroll-container');
+
+container.addEventListener('wheel', (event) => {
+  // Check if the user is scrolling vertically
+  if (event.deltaY !== 0) {
+    // Prevent the main window/page from scrolling down
+    event.preventDefault(); 
+    
+    // Convert the vertical scroll amount into horizontal scroll movement
+    container.scrollLeft += event.deltaY;
+  }
+}, { passive: false }); // passive: false is required to allow preventDefault()
+
