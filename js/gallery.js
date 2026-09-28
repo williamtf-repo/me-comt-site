@@ -6,9 +6,9 @@ document.addEventListener('click', (event) => {
   if (!viewer) {
     viewer = document.createElement('div');
     viewer.dataset.galleryViewer = '';
-    viewer.style.cssText = 'position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.85);z-index:9999;padding:2rem;box-sizing:border-box;cursor:pointer;';
+    viewer.classList.add("img-viewer");
     viewer.addEventListener('click', () => {
-      viewer.style.display = 'none';
+      viewer.style.opacity = '0';
       viewer.replaceChildren();
     });
     document.body.appendChild(viewer);

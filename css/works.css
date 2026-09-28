@@ -136,6 +136,7 @@ body {
     }
 
     .grid-item:hover {
+        z-index: 67;
         transform:scale(1.15);
     }
     .grid-item:hover img {
@@ -148,10 +149,25 @@ body {
         /* display: flex; */
         position: fixed;
         align-content: center;
-        top: 0;
+        opacity: 1;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        background:rgba(0,0,0,.85);
+        z-index:9999;
+        padding:2rem;
+        box-sizing:border-box;
+        cursor:pointer;
+
+        transition: background 1s;
+    }
+
+    
+    .img-viewer img {
+
+        opacity: 0;
+
+        transition: opacity 1s;
     }
 
 }
