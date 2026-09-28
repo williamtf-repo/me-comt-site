@@ -5,6 +5,15 @@ body {
     align-items: flex-end;
     justify-content: space-evenly;
 
+    @keyframes tr-hz {
+        from {
+            transform: translateX(0);
+        } 
+        to {
+            transform: translateX(calc(-100% + 30vw)); 
+        }
+    }
+
     .content-section {
 	    min-height: 93vh;
         width: 100%;
@@ -109,14 +118,6 @@ body {
     animation-timeline: scroll();
     animation-range: contain 0% contain 100%;
 
-    @keyframes tr-hz {
-        from {
-            transform: translateX(0);
-        } 
-        to {
-            transform: translateX(calc(-100% + 30vw)); 
-        }
-    }
     }
 
     .grid-item {
