@@ -83,7 +83,7 @@ body {
     }
 
     .hz-scroll {
-        height: 200vh; /* THIS SETS THE SPEED OF THE HORIZONTAL SCROLL */
+        height: 300vh; /* THIS SETS THE SPEED OF THE HORIZONTAL SCROLL */
         width: 100%;
     }
     
@@ -98,9 +98,8 @@ body {
     .grid-container {
     display: flex;
     flex-direction: row;
-
-    height: 500px;
-    gap: 12px;
+    gap: 24px;
+    align-items: center;
     width: max-content;
     will-change: transform;
     transform: translateX(0);
@@ -112,7 +111,9 @@ body {
 
     .grid-item {
         overscroll-behavior-y: contain;
-        flex: 0 0 auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
         aspect-ratio: 1.2;
         overflow: hidden;
         width: 500px;
@@ -124,15 +125,15 @@ body {
     }
 
     .grid-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1);
+        height: 150%;
+        aspect-ratio: auto;
+
+        transition: transform 0.3s cubic-bezier(0.25, .9, 1, 1);
     }
 
 
-    .grid-item:hover .grid-item img {
-        transform: scale(1.2);
+    .grid-item:hover img {
+        transform: scale(.8);
     }
 
 
@@ -140,9 +141,9 @@ body {
 
 @keyframes tr-hz {
         from {
-            transform: translateX(120%);
+            transform: translateX(75%);
         } 
         to {
-            transform: translateX(calc(-75%)); 
+            transform: translateX(calc(-95%)); 
         }
 }
