@@ -83,7 +83,7 @@ body {
     }
 
     .hz-scroll {
-        height: 100vh;
+        height: 200vh;
         width: 100%;
     }
     
@@ -91,6 +91,7 @@ body {
         position: sticky;
         top: 0;
         height: 100vh;
+        padding-top: calc(6.543075245365322vh + 23.25vh); 
         overflow: hidden;
     }    
 
