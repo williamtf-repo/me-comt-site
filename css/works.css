@@ -144,6 +144,6 @@ body {
             transform: translateX(75%);
         } 
         to {
-            transform: translateX(calc(-95%)); 
+            transform: translateX(-88%); 
         }
 }
