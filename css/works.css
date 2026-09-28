@@ -102,6 +102,7 @@ body {
         gap: 12px;
         width: max-content;
         will-change: transform;
+        transform: translateX(0);
         
         animation: tr-hz linear both;
         animation-timeline: scroll();
@@ -126,6 +127,9 @@ body {
     }
 
     @keyframes tr-hz {
+      from {
+    transform: translateX(0);
+    } 
      to {
     transform: translateX(calc(-100% + 30vw)); 
     }
