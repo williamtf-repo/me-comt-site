@@ -121,20 +121,25 @@ body {
         border-radius: 12px;
         background-color: var(--background-color);
         border: 2px solid var(--border-color);
+        transform: scale(1);
         transition: transform 0.2s cubic-bezier(0.25, 1.35, 1, 1), background 0.2s cubic-bezier(0.25, 1.35, 1, 1);
     }
 
     .grid-item img {
         width: 175%;
         height: 175%;
+        transform: scale(1.15);
         aspect-ratio: auto;
         object-fit: cover;
 
         transition: transform 0.3s cubic-bezier(0.25, .9, 1, 1);
     }
 
+    .grid-item:hover {
+        transform:scale(1.15);
+    }
     .grid-item:hover img {
-        transform: scale(.8);
+        transform: scale(1);
     }
 
 }
