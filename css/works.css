@@ -117,6 +117,7 @@ body {
             transform: translateX(calc(-100% + 30vw)); 
         }
     }
+    }
 
     .grid-item {
         overscroll-behavior-y: contain;
@@ -136,5 +137,4 @@ body {
     }
 
 
-}
 }
