@@ -110,15 +110,6 @@ body {
     animation-range: contain 0% contain 100%;
     }
 
-    @keyframes tr-hz {
-        from {
-            transform: translateX(0);
-        } 
-        to {
-            transform: translateX(calc(-100% + 30vw)); 
-        }
-    }
-
     .grid-item {
         overscroll-behavior-y: contain;
         flex: 0 0 auto; 
@@ -137,4 +128,13 @@ body {
     }
 
 
+}
+
+@keyframes tr-hz {
+        from {
+            transform: translateX(0);
+        } 
+        to {
+            transform: translateX(calc(-100% + 30vw)); 
+        }
 }
