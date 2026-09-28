@@ -83,7 +83,7 @@ body {
     }
 
     .hz-scroll {
-        height: 200vh;
+        height: 200vh; /* THIS SETS THE SPEED OF THE HORIZONTAL SCROLL */
         width: 100%;
     }
     
@@ -106,7 +106,7 @@ body {
     transform: translateX(0);
     
     animation: tr-hz linear both;
-    animation-timeline: scroll();
+    animation-timeline: scroll(root);
     animation-range: contain 0% contain 100%;
     }
 
@@ -132,7 +132,7 @@ body {
 
 @keyframes tr-hz {
         from {
-            transform: translateX(0);
+            transform: translateX(-30vw);
         } 
         to {
             transform: translateX(calc(-100% + 30vw)); 
