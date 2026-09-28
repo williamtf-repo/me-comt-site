@@ -1,4 +1,9 @@
-body { 
+body {
+
+    :root {
+        --the-translationx-br: translateX(-30vw);
+        --didi: translateX(-30vw);
+    } 
 
     display: flex;
     flex-wrap: wrap;
@@ -132,9 +137,9 @@ body {
 
 @keyframes tr-hz {
         from {
-            transform: translateX(-30vw);
+            transform: var(--didi);
         } 
         to {
-            transform: translateX(calc(-100% + 30vw)); 
+            transform: var(--the-translationx-br); 
         }
 }
