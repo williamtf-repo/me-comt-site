@@ -125,17 +125,17 @@ body {
     }
 
     .grid-item img {
-        height: 150%;
+        width: 175%;
+        height: 175%;
         aspect-ratio: auto;
+        object-fit: cover;
 
         transition: transform 0.3s cubic-bezier(0.25, .9, 1, 1);
     }
 
-
     .grid-item:hover img {
         transform: scale(.8);
     }
-
 
 }
 
