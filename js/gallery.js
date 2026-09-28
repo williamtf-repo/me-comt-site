@@ -7,9 +7,13 @@ document.addEventListener('click', (event) => {
     viewer = document.createElement('div');
     viewer.dataset.galleryViewer = '';
     viewer.classList.add("img-viewer");
-    viewer.addEventListener('click', () => {
-      viewer.style.background = 'rgba(0,0,0,0)';
+    viewer.addEventListener('transitionend', (event) => {
+      if (event.target !== viewer || viewer.classList.contains('is-visible')) return;
+      viewer.style.display = 'none';
       viewer.replaceChildren();
+    });
+    viewer.addEventListener('click', () => {
+      viewer.classList.remove('is-visible');
     });
     document.body.appendChild(viewer);
   }
@@ -19,4 +23,5 @@ document.addEventListener('click', (event) => {
   enlargedImage.style.cssText = 'max-width:100%;max-height:100%;object-fit:contain;';
   viewer.replaceChildren(enlargedImage);
   viewer.style.display = 'flex';
+  requestAnimationFrame(() => viewer.classList.add('is-visible'));
 });

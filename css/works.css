@@ -149,23 +149,30 @@ body {
         /* display: flex; */
         position: fixed;
         align-content: center;
-        opacity: 1;
+        inset: 0;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+
         background:rgba(0,0,0,.85);
         z-index:9999;
         padding:2rem;
+        opacity:0;
+
         box-sizing:border-box;
         cursor:pointer;
 
-        transition: background 1s;
+        transition: opacity .5s;
+    }
+
+    .img-viewer.is-visible {
+        opacity:1;
     }
 
     
     .img-viewer img {
 
-        opacity: 0;
+        opacity: 1;
 
         transition: opacity 1s;
     }
