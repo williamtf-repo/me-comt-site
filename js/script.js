@@ -93,8 +93,6 @@ const observer = new IntersectionObserver((entries) => {
 
 if (target) observer.observe(target);
 
-if (target5) observer.observe(target5);
-
 const regularRootVariables = {
   '--base-color': '#294051',
   '--background-color': '#3c627d',
