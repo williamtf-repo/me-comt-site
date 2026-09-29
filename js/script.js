@@ -30,7 +30,7 @@ card?.addEventListener('mouseenter', () => {
   gsap.to(image, {
     duration: 1,
     ease: 'power2.out',
-    boxShadow: '0px 0px 12px rgba(255, 255, 255, 1)',
+    boxShadow: '0px 0px 12px rgba(255, 184, 158,0.85)',
     overwrite: 'auto',
   });
 });
@@ -52,7 +52,7 @@ card?.addEventListener('mousemove', (e) => {
   gsap.to(image, {
     duration: 0.1,
     ease: 'linear',
-    boxShadow: `${shadowX}px ${shadowY}px 12px rgba(255, 184, 158,0.85))`,
+    boxShadow: `${shadowX}px ${shadowY}px 12px rgba(255, 184, 158,0.85)`,
     overwrite: 'auto',
   });
 
@@ -65,7 +65,7 @@ card?.addEventListener('mouseleave', () => {
   gsap.to(image, {
     duration: .5,
     ease: 'power2.out',
-    boxShadow: '0px 0px 6px rgba(255, 255, 255, 0)',
+    boxShadow: '0px 0px 6px rgba(255, 184, 158,0.85)',
   });
 });
 
