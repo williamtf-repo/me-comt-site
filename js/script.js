@@ -52,7 +52,7 @@ card?.addEventListener('mousemove', (e) => {
   gsap.to(image, {
     duration: 0.1,
     ease: 'linear',
-    boxShadow: `${shadowX}px ${shadowY}px 12px rgba(255, 255, 255, 1)`,
+    boxShadow: `${shadowX}px ${shadowY}px 12px rgba(255, 184, 158,0.85))`,
     overwrite: 'auto',
   });
 
