@@ -65,7 +65,7 @@ card?.addEventListener('mouseleave', () => {
   gsap.to(image, {
     duration: .5,
     ease: 'power2.out',
-    boxShadow: '0px 0px 6px rgba(255, 184, 158,0.85)',
+    boxShadow: '0px 0px 6px rgba(255, 184, 158,0)',
   });
 });
 
