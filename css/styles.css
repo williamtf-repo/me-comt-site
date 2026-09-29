@@ -255,22 +255,15 @@ body {
         align-self: flex-start;
     }
     .heading-ooo {
-        float: left;
         letter-spacing: -.08em;
         font-size: max(200px, 6vw);
         margin: 6vh 0 2vh;
-        text-align: left;
+        text-align: center;
         opacity: 0;
         line-height: 0.6em;
         font-weight: 600;
 
-
         transition: letter-spacing 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s, color .5s;
-    }
-
-    .heading-ooo::first-letter {
-        transform: skewY(25deg);
-        float: left;
     }
 
     .heading-ooo.visible {
