@@ -293,7 +293,7 @@ body {
         height: 600px;
 
         position: absolute;
-        align-self: flex-end;
+        align-self: center;
 
         margin-bottom: 24px;
         right: 24px;
