@@ -196,7 +196,7 @@ body {
     .parallax {
     perspective: 1500px; /* lower is More tilt*/
     width: 600px;
-    height: 400px;
+    height: 600px;
     opacity: 0;
     display: flex;
     align-items: center;
