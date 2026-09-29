@@ -78,6 +78,7 @@ const target3 = document.querySelector('#MeImg');
 const target4 = document.querySelector('#s2-img');
 
 
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -91,6 +92,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 if (target) observer.observe(target);
+
+if (target5) observer.observe(target5);
 
 const regularRootVariables = {
   '--base-color': '#294051',

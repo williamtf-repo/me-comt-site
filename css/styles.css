@@ -253,6 +253,7 @@ body {
     .h1-s2 {
         position: absolute;
         align-self: flex-start;
+        width:50%;
     }
     .heading-ooo {
         letter-spacing: -.08em;
@@ -289,22 +290,29 @@ body {
     }
 
     .s2-img-container {
-        width: 500px;
+        width: 400px;
         height: 600px;
 
         position: absolute;
         align-self: center;
 
         margin-bottom: 24px;
-        right: 24px;
+        right: 5%;
     }
 
     
     .s2-img {
         width: 100%;
         height: 100%;
-
+        opacity: 0;
         object-fit: cover;
+
+        transition: transform 0.25s cubic-bezier(0.25, 1.35, 1, 1), opacity .5s;
+    }
+
+    .s2-img.visible {
+        opacity: 1;
+
     }
 
 }
