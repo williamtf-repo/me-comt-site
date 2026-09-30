@@ -290,8 +290,8 @@ body {
     }
 
     .s2-img-container {
-        width: 400px;
-        height: 600px;
+        width: 500px;
+        height: 700px;
 
         position: absolute;
         align-self: center;
@@ -302,7 +302,6 @@ body {
 
     
     .s2-img {
-        width: 100%;
         height: 100%;
         opacity: 0;
         object-fit: cover;
